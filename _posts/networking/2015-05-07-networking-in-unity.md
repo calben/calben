@@ -48,10 +48,10 @@ Best thing to do seems to be to set up a script to run some $n$ copies of your g
 But if you're going to be maintaining networking in those copies, you need to actually make physical copies of the game on your disc.
 So a script to run your games might look something like:
 
-```
+{% highlight ruby linenos %}
 for value in range n
   copy gamename.exe gamename-n.exe
   copy gamecontentfolder gamecontentfolder-n
   gamename.exe --client
 gamename.exe --host
-```
+{% endhighlight %}
