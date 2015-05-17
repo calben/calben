@@ -2,7 +2,7 @@
 layout: post
 category : games
 tagline: "using unreal engine 4 and svn"
-tags : [overview, beginner, unity, networking]
+tags : [overview, beginner, unreal, setup]
 title : Setting Up Your Videogame Project
 ---
 {% include JB/setup %}
