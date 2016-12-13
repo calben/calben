@@ -62,7 +62,13 @@ $(function() {
 <div class="title">solartimingutils </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Sunrise and sunset time calculation utils in C </p>
+<div class="textblock"><p>Sunrise and sunset time calculation utils in C</p>
+<h2>Documentation</h2>
+<p>The documentation for this code can be found here: <a href="http://calben.github.io/solartimingutils/">http://calben.github.io/solartimingutils/</a> Since this is a rather small library, the documentation isn't much!</p>
+<h2>Compiling and Testing</h2>
+<p>I use the following to compile and test: </p><pre class="fragment">gcc testsolarutils.c solarutils.c --std=c11 -lm -o testsolarutils.out
+./testsolarutils.out
+</pre><p>If the utility ends up becoming larger I may implement proper unit testing and continuous integration. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
