@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="calben">
+<meta name="description" content="website for calem bendell.">
+<meta name="generator" content="Hugo 0.18.1" />
+<title>calben</title>
+<link rel="shortcut icon" href="http://www.calben.xyz/favicon.ico">
+<link rel="stylesheet" href="http://www.calben.xyz/css/uikit.flatly-dark.css" type="text/css">
+<link rel="stylesheet" href="http://www.calben.xyz/css/hugo-flatly-dark-resume.css" type="text/css">
+<link rel="stylesheet" href="http://www.calben.xyz/css/uikit.calbensite.css" type="text/css">
+<script src="http://www.calben.xyz/js/jquery-2.2.3.min.js"></script>
+<script src="http://www.calben.xyz/js/uikit.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://www.calben.xyz/css/highlightstyles/monokai.css">
+<script src="http://www.calben.xyz/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body id="page-top">
+
+  <div data-uk-sticky>
+    <nav class="uk-flex uk-flex-center uk-navbar styled-nav" style="padding: 20px 0px 15px 0px;">
+<ul class="uk-navbar-nav">
+
+	<li class="uk-parent uk-button-success" data-uk-dropdown="">
+		<a href="">PAGES <i class="uk-icon-caret-down"></i></a>
+		<div class="uk-dropdown uk-dropdown-navbar">
+			<ul class="uk-nav uk-nav-navbar">
+				<li><a href="http://www.calben.xyz//about">ABOUT</a></li>
+				
+				<li class="uk-nav-divider"></li>
+				<li><a href="http://www.calben.xyz//posts">POSTS</a></li>
+				<li><a href="http://www.calben.xyz//projects">PROJECTS</a></li>
+				<li class="uk-nav-divider"></li>
+				<li><a href="http://www.calben.xyz//media">MEDIA</a></li>
+			</ul>
+		</div>
+	</li>
+
+	<li class="uk-button-primary"><a href="http://www.calben.xyz/">CALBEN</a></li>
+
+	<li class="uk-parent uk-button-success" data-uk-dropdown="">
+		<a href="">LINKS <i class="uk-icon-caret-down"></i></a>
+		<div class="uk-dropdown uk-dropdown-navbar">
+			<ul class="uk-nav uk-nav-navbar">
+				<li><a href="https://github.com/calben">GITHUB</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
+</nav>
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+
+    <div class="uk-grid" data-uk-grid-margin>
+
+        <article class="uk-article uk-width-medium-1-1">
+
+          <h1 class="uk-text-success uk-heading-large">McGill Game Developer Summer Camp Day 1</h1>
+          
+
+          
+
+          <hr/>
+
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#welcome-to-games-camp">Welcome to Games Camp</a>
+<ul>
+<li><a href="#big-budget-games">Big Budget Games</a></li>
+<li><a href="#tiny-budget-games">Tiny Budget Games</a></li>
+</ul></li>
+<li><a href="#our-game">Our Game</a></li>
+<li><a href="#basic-programming">Basic Programming</a>
+<ul>
+<li><a href="#what-is-programming">What is programming?</a></li>
+<li><a href="#the-java-language">The Java Language</a>
+<ul>
+<li><a href="#a-walkthrough-for-your-first-basic-program">A Walkthrough for Your First Basic Program</a></li>
+<li><a href="#running-a-java-program-on-your-machine">Running a Java Program On Your Machine</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+            <hr/>
+
+              
+
+<h1 id="welcome-to-games-camp">Welcome to Games Camp</h1>
+
+<p>Hullo, I&rsquo;m Calem, and welcome to the games camp!</p>
+
+<p>In a few weeks (as of writing this) we&rsquo;ll be discussing programming as it related to video games both large and small for 4 days.
+4 days isn&rsquo;t a lot of time, but it&rsquo;s enough time to learn some basic general programming and get an introduction to gaming development and logic.</p>
+
+<p>This is a little introduction to the material that will be presented at the camp.
+Most of the material that will be presented during the camp will only be given to you during the camp week; however, you should receive this little article, and a couple others, in an email before coming to the camp.
+You don&rsquo;t need to read it ahead of the camp in order to do well in the camp, but I recommend you at least read this one and start thinking about the concepts presented.
+Just a half hour or so of reading ahead can do a surprising amount of preparation.</p>
+
+<p>There will be some varying skill levels from attendees of the camp.
+While everyone will be asked to pay attention during the lecture periods, even if they know the material already, during the laboratory and project periods I will have a set of coding challenges prepared for people who finish the lab material early.</p>
+
+<p>This page may be printed with reduced styling if you prefer reading from paper.
+To print this page, just use the regular print menu in your browser.
+Unfortunately that big</p>
+
+<h2 id="big-budget-games">Big Budget Games</h2>
+
+<div class="uk-align-medium-right">
+  <img style="width:600px;" src="/img/post/forhonor.jpg" />
+</div>
+
+<p>Big budget games are massive endeavours.
+They are typically done on a complicated gaming engine, such as Unreal Engine, Frostbite, or Anvil, and are developed by teams of hundreds of programmers, graphic designers, 3d artists, etc.
+Looking at the below image, you might have a gameplay programmer make a scoring system, an animator else make the animation for someone swinging a sword, a physics programmer to write the physics for the sword hitting a target, a modeler to make the sword, an interface programmer to write the feedback to confirm a hit, etc.</p>
+
+<p>Imagining for a moment we are programming the game, here&rsquo;s some of the stuff we might need:</p>
+
+<ol>
+<li>A <em>list</em> of all the players</li>
+<li>A set of <em>method</em>&rsquo;s for getting the information from the player&rsquo;s controllers and moving their characters</li>
+<li>A collection of <em>objects</em> representing everything in the game</li>
+<li>Algorithms for lighting the scene</li>
+<li>Drivers for displaying the game world to the player</li>
+<li>A <em>loop</em> that continues the game until the player chooses to quit.</li>
+</ol>
+
+<p>The list goes on!
+But note those keywords, they&rsquo;re important.</p>
+
+<p><strong>Usually</strong> these sorts of games are blockbusters with interesting components and a fun core gameplay.
+Lately they rely a lot on multiplayer, which has networking components.</p>
+
+<h2 id="tiny-budget-games">Tiny Budget Games</h2>
+
+<div class="uk-align-medium-right">
+  <img style="width:600px;" src="/img/post/limbo.jpg" />
+</div>
+
+<p>These also go under the name of &ldquo;indie games.&rdquo;
+This type of game means a lot of different things to people.
+Let&rsquo;s not get into that too much for now- perhaps during the lecture and discussion session we can talk about it.
+What I want to bring to your attention is the difference between the below image of <strong>Limbo</strong> and the above image of <strong>For Honor</strong>.
+<strong>For Honor</strong> uses a lot of textures, colors, and models to make a beautiful game.
+<strong>Limbo</strong> uses some beautiful art assets, but they&rsquo;re 2D and black and white.</p>
+
+<p>If you want to develop an indie game, you can get together with a friend and do it.
+One of the beautiful things about video games is that you can &ldquo;make a lot using a little.&rdquo;
+When you&rsquo;re reading a book, maybe a vivid image of what&rsquo;s happening appears in your head.
+When you&rsquo;re playing a game, just a little interaction can make a story that much better.
+One popular phone game, <strong>Tap Tap Revenge</strong> involves players tapping their screens along with music- a simple game mechanic that was very enjoyable.</p>
+
+<h1 id="our-game">Our Game</h1>
+
+<p>Over the next few days we&rsquo;re developing an AI for the game Space Racer.
+Your AI will guide the ship through an asteroid field.</p>
+
+<figure >
+    
+        <img src="/img/post/spaceracer.png"  />
+    
+    
+    <figcaption>
+        <h4>McGill&#39;s Space Racer game.</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>Our schedule consists of the following:</p>
+
+<ol>
+<li>Learn basic programming</li>
+<li>Explore 3D modeling</li>
+<li>Learn about how different parts of game development fit together</li>
+<li>Learn basic artificial intelligence for games</li>
+<li>Hold a competition!</li>
+</ol>
+
+<h1 id="basic-programming">Basic Programming</h1>
+
+<h2 id="what-is-programming">What is programming?</h2>
+
+<p>A computer doesn&rsquo;t have any reasoning abilities or thought.
+Not yet at least.
+Any computer you use is following a list of instructions one by one.
+If it does something other than that list of instructions, it has performed an error or its hardware has failed.
+We call this list of instructions a <em>program</em>.
+A program is an instruction set that tells the computer <strong>exactly</strong> what to do.
+If a person wants to interact with the program, it needs to be prepared to receive <em>input</em>, such as whether a button on a controller is pressed.
+For games, input is usually a pretty simple thing in which we check the current <em>state</em>, or its current set of conditions and data, on a gamepad.
+Usually we interact with a computer through a screen such that the screen is the <em>output</em> of our program, but sometimes the output might be a paper printed out or a new file put on the computer&rsquo;s disk.</p>
+
+<p>Even though a computer isn&rsquo;t sentient, not everything a computer does was necessarily written by a human.
+Instead, it was probably written by a <em>compiler</em>.
+A compiler is a program written to make programming easier.
+This may be a little confusing at first, but most computers can only read 0&rsquo;s and 1&rsquo;s right now.
+A program might look like 0010111010101011001011&hellip;&hellip;..
+This isn&rsquo;t very easy to read or write.
+Even the abstracted version of that code might look like this:</p>
+
+<pre>
+  <code>
+org
+  xor ax, ax
+  mov ds, ax
+  mov si, msg
+boot_loop:lodsb
+  or al, al
+  jz go_flag
+  mov ah, 0x0E
+  int 0x10
+  jmp boot_loop
+go_flag:
+  jmp go_flag
+msg db "hello world", 13, 10, 0
+times 510-($-$$) db 0
+db 0x55
+db 0xAA
+  </code>
+</pre>
+
+<p>A program might consist of hundreds of thousands of lines of this sort of text, so programmers made an even <em>higher level abstraction</em> to represent the program.
+After we made that higher level abstraction, we made another one!
+For the most part, the higher level the abstraction, the less control you have over the final program, but the easier it is to make a useful program quickly.</p>
+
+<p>If we compile the code above, it would produce a little program that prints &ldquo;hello world&rdquo; to the screen.
+Another language can produce the same result with:</p>
+
+<pre>
+  <code class="C++">
+#include < stdio.h >
+int main()
+{
+  printf("\nHello world!");
+  return 0;
+}  
+</code>
+</pre>
+
+<p>As programs grow larger and more complicated, the difference a higher level of language abstraction makes tends to also grow.
+Having less control over the final program often means that the programs are slower though (during the camp, we&rsquo;ll talk about why this happens), so video games are often done in &ldquo;low level languages.&rdquo;</p>
+
+<h2 id="the-java-language">The Java Language</h2>
+
+<p>We&rsquo;re going to be learning the language Java.
+Java typically isn&rsquo;t used for videogames, but it has wide industry use and the concepts in the language are the same as in the more popular languages for programming games, such as C++ and C#.
+Right now, C# is best used on Windows.
+C++ is simply impossible to learn in a week.
+Fortunately, Java runs well on most platforms, uses similar principles as C# and C++, and is pretty easy to learn!</p>
+
+<p>Java programs generally look something like this:</p>
+
+<pre>
+  <code>
+package gamescamp;
+
+public class GamesCamp {
+
+  public static void main(String[] args) {
+      // TODO your code goes here
+  }  
+}
+  </code>
+</pre>
+
+<p>For the purpose of our camp, we&rsquo;re not going to talk about some of the above code.
+We&rsquo;re interested in the segment <code>TODO your code goes here</code>.
+The rest of it is basically telling the computer how to set up the program and where to start the program.</p>
+
+<h3 id="a-walkthrough-for-your-first-basic-program">A Walkthrough for Your First Basic Program</h3>
+
+<pre>
+  <code>
+// this is a commented line
+// it gives the reader notes
+// you can comment your own code to make it easier to understand!
+// or maybe to remind yourself of your own code later
+
+package gamescamp; // ignore this
+
+public class GamesCamp { // we can tell the computer this is
+                         // the place to look for a main method
+
+  public static void main(String[] args) { // the main method!
+                                           // to the computer this looks like
+                                           // "start here please"
+
+    int countdown = 10;  // make a new integer variable and start it at 10
+    for (int i = countdown; i > 0; i--)
+      System.out.println("Launch in " + i);
+  }  
+}
+  </code>
+</pre>
+
+<p>Important key terms in the above segment:</p>
+
+<ul>
+<li>A <em>method</em> is a bit of functionality the computer can perform.  It might have some <em>input</em> and it might have some <em>output</em>.  Think about the mathematical <code>sine</code> function.  You usually say something like &ldquo;the <code>sine</code> of pi is 0.0015.&rdquo;  In programming this is rephrased as &ldquo;the method <code>sine</code> returns 0.0015 given the input pi.&rdquo;<br /></li>
+<li>A <em>variable</em> is like a placeholder for something you want the program to remember, like a sentence or a number.  Every variable has a <em>type</em> that tells the computer how to read the variable.</li>
+</ul>
+
+<h3 id="running-a-java-program-on-your-machine">Running a Java Program On Your Machine</h3>
+
+<p>When you come to the camp, the computers will already be set up to run your programs and the game we&rsquo;ll be using for AI easily.</p>
+
+
+          </article>
+
+    </div>
+
+  </div>
+
+
+    <!-- uikit -->
+<script src="http://www.calben.xyz/js/uikit.min.js"></script>
+<script src="http://www.calben.xyz/js/components/sticky.min.js"></script>
+
+</body>
+</html>

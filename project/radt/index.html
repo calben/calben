@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="calben">
+<meta name="description" content="website for calem bendell.">
+<meta name="generator" content="Hugo 0.18.1" />
+<title>calben</title>
+<link rel="shortcut icon" href="http://www.calben.xyz/favicon.ico">
+<link rel="stylesheet" href="http://www.calben.xyz/css/uikit.flatly-dark.css" type="text/css">
+<link rel="stylesheet" href="http://www.calben.xyz/css/hugo-flatly-dark-resume.css" type="text/css">
+<link rel="stylesheet" href="http://www.calben.xyz/css/uikit.calbensite.css" type="text/css">
+<script src="http://www.calben.xyz/js/jquery-2.2.3.min.js"></script>
+<script src="http://www.calben.xyz/js/uikit.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://www.calben.xyz/css/highlightstyles/monokai.css">
+<script src="http://www.calben.xyz/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body id="page-top">
+
+  <div data-uk-sticky>
+    <nav class="uk-flex uk-flex-center uk-navbar styled-nav" style="padding: 20px 0px 15px 0px;">
+<ul class="uk-navbar-nav">
+
+	<li class="uk-parent uk-button-success" data-uk-dropdown="">
+		<a href="">PAGES <i class="uk-icon-caret-down"></i></a>
+		<div class="uk-dropdown uk-dropdown-navbar">
+			<ul class="uk-nav uk-nav-navbar">
+				<li><a href="http://www.calben.xyz//about">ABOUT</a></li>
+				
+				<li class="uk-nav-divider"></li>
+				<li><a href="http://www.calben.xyz//posts">POSTS</a></li>
+				<li><a href="http://www.calben.xyz//projects">PROJECTS</a></li>
+				<li class="uk-nav-divider"></li>
+				<li><a href="http://www.calben.xyz//media">MEDIA</a></li>
+			</ul>
+		</div>
+	</li>
+
+	<li class="uk-button-primary"><a href="http://www.calben.xyz/">CALBEN</a></li>
+
+	<li class="uk-parent uk-button-success" data-uk-dropdown="">
+		<a href="">LINKS <i class="uk-icon-caret-down"></i></a>
+		<div class="uk-dropdown uk-dropdown-navbar">
+			<ul class="uk-nav uk-nav-navbar">
+				<li><a href="https://github.com/calben">GITHUB</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
+</nav>
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+
+    <div class="uk-grid" data-uk-grid-margin>
+
+        <article class="uk-article uk-width-medium-1-1">
+
+          <h1 class="uk-text-success uk-heading-large">RAD-T</h1>
+          
+            <p class="uk-article-lead"> predicting protein-protein interfaces </p>
+          
+
+          
+
+          <hr />
+
+          
+
+<p>From 2011 to late 2013 I had the pleasure of working with Professor Murgita and many friends to make a protein-protein interface prediction pipeline.
+My time with the project is done, but some of our work is described in a paper &ldquo;Transient protein-protein interface prediction: datasets, features, algorithms, and the RAD-T predictor.&rdquo;
+This paper is freely available to view here: <a href="http://www.ncbi.nlm.nih.gov/pubmed/24661439">http://www.ncbi.nlm.nih.gov/pubmed/24661439</a></p>
+
+<p>The paper is highly academic (surprise!), and I hope to write a simpler description of the program and an introduction for anyone interested in protein research, but for now I include the paper&rsquo;s abstract below.</p>
+
+<h2 id="paper-abstract">Paper Abstract</h2>
+
+<h3 id="background">BACKGROUND</h3>
+
+<p>Transient protein-protein interactions (PPIs), which underly most biological processes, are a prime target for therapeutic development. Immense progress has been made towards computational prediction of PPIs using methods such as protein docking and sequence analysis. However, docking generally requires high resolution structures of both of the binding partners and sequence analysis requires that a significant number of recurrent patterns exist for the identification of a potential binding site. Researchers have turned to machine learning to overcome some of the other methods&rsquo; restrictions by generalising interface sites with sets of descriptive features. Best practices for dataset generation, features, and learning algorithms have not yet been identified or agreed upon, and an analysis of the overall efficacy of machine learning based PPI predictors is due, in order to highlight potential areas for improvement.</p>
+
+<h3 id="results">RESULTS</h3>
+
+<p>The presence of unknown interaction sites as a result of limited knowledge about protein interactions in the testing set dramatically reduces prediction accuracy. Greater accuracy in labelling the data by enforcing higher interface site rates per domain resulted in an average 44% improvement across multiple machine learning algorithms. A set of 10 biologically unrelated proteins that were consistently predicted on with high accuracy emerged through our analysis. We identify seven features with the most predictive power over multiple datasets and machine learning algorithms. Through our analysis, we created a new predictor, RAD-T, that outperforms existing non-structurally specializing machine learning protein interface predictors, with an average 59% increase in MCC score on a dataset with a high number of interactions.</p>
+
+<h3 id="conclusion">CONCLUSION</h3>
+
+<p>Current methods of evaluating machine-learning based PPI predictors tend to undervalue their performance, which may be artificially decreased by the presence of un-identified interaction sites. Changes to predictors&rsquo; training sets will be integral to the future progress of interface prediction by machine learning methods. We reveal the need for a larger test set of well studied proteins or domain-specific scoring algorithms to compensate for poor interaction site identification on proteins in general.</p>
+
+
+          </article>
+
+    </div>
+
+  </div>
+
+
+    <!-- uikit -->
+<script src="http://www.calben.xyz/js/uikit.min.js"></script>
+<script src="http://www.calben.xyz/js/components/sticky.min.js"></script>
+
+</body>
+</html>

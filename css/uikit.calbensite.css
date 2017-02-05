@@ -1,0 +1,16 @@
+html, h1, h2, h3, h4 {
+    color: #D1BE51;
+    border-color: #D1BE51;
+}
+
+.uk-grid-divider:empty{
+  border-top: 1px solid #D1BE51;
+}
+
+.styled-nav {
+    border-bottom: 3px solid #D1BE51;
+}
+
+.bordered-top {
+    border-top: 3px solid #D1BE51;
+}
