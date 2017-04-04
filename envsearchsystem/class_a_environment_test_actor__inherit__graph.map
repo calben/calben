@@ -1,0 +1,4 @@
+<map id="AEnvironmentTestActor" name="AEnvironmentTestActor">
+<area shape="rect" id="node3" href="$class_a_distance_test_actor.html" title="ADistanceTestActor" alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node4" href="$class_a_trace_test_actor.html" title="ATraceTestActor" alt="" coords="169,155,287,181"/>
+</map>
